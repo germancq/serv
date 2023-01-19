@@ -35,12 +35,16 @@ module servant_mux
    output wire 	      o_wb_timer_cyc,
    input wire [31:0]  i_wb_timer_rdt,
    
+   output wire [31:0] o_wb_eluks_adr,
    output wire [31:0] o_wb_eluks_dat,
+   output wire [3:0] o_wb_eluks_sel,
    output wire o_wb_eluks_we,
    output wire o_wb_eluks_cyc,
    input wire [31:0] i_wb_eluks_rdt,
 
+   output wire [31:0] o_wb_boot_adr,
    output wire [31:0] o_wb_boot_dat,
+   output wire [3:0] o_wb_boot_sel,
    output wire o_wb_boot_we,
    output wire o_wb_boot_cyc,
    input wire [31:0] i_wb_boot_rdt
